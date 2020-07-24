@@ -3,21 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tiketo Express</title>
     <link rel="stylesheet" href="../../styles/App.css">
     <link rel="stylesheet" href="../../pages/Register/index.css">
+
+    <link rel="icon" type="image/png" href="../../images/tab-logo.png">
+    <link rel="stylesheet" type="text/css" href="../../Arthur/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../../Arthur/footer-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../../Arthur/navbar-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../../Arthur/index-stylesheet.css">
+
+  <style>
+    h4{
+      color: black;
+    }
+  </style>
+
 </head>
 <body>
 
         <!-- =========================== Navegation Bar ========================== -->
-        <nav >
-            <ul class="ul_nav" >
-                <a href="/" class="a_nav" >HOME</a>
-                <a href="/About" class="a_nav" >About</a>
-                <a href="/Locations" class="a_nav" >Locations</a>
-                <a href="/Login" class="a_nav" >Login</a>
-            </ul>
-        </nav>
+        <div class="navbar-grid">
+          <div></div>
+          <!--Navbar Logo-->
+              <div>
+                  <a href="/">
+                      <img src="../../images/logo.png" alt="Logo TiketoExpress" class="navbar-logo">
+                  </a>
+              </div>
+          <!--Gray Line-->
+              <div class="gray-line">I</div>
+              <div></div>
+          <!--Navabar Buttons-->
+              <a href="/Places">
+                  <div class="navbar-buttons-grid">
+                      <div><img src="../../images/icon1.png" alt="Ícone Passagens Aréreas" class="navbar-icons"></div>
+                      <div class="navbar-font-style">Destinos</div>
+                  </div>
+              </a>
+              <a href="#">
+                  <div class="navbar-buttons-grid">
+                      <div><img src="../../images/icon2.png" alt="Ícone Onde Estamos" class="navbar-icons"></div>
+                      <div class="navbar-font-style">Onde Estamos</div>
+                  </div>
+              </a>
+              <a href="/About">
+                  <div class="navbar-buttons-grid">
+                      <div><img src="../../images/icon3.png" alt="Ícone Quem Somos" class="navbar-icons"></div>
+                      <div class="navbar-font-style">Quem Somos</div>
+                  </div>
+              </a>
+              <div></div>
+          <!--Gray Navbar-->
+              <div class="gray-navbar-grid">
+                  <div></div>
+                  <a href="/Login">
+                      <div class="navbar-buttons-grid">
+                          <div><img src="../../images/icon4.png" alt="Ícone Login" class="navbar-icons"></div>
+                          <div class="navbar-font-style">Login</div>
+                      </div>
+                  </a>
+                  <a href="/Search">
+                      <div class="navbar-buttons-grid">
+                          <div><img src="../../images/icon5.png" alt="Ícone Reservas" class="navbar-icons"></div>
+                          <div class="navbar-font-style">Reservas</div>
+                      </div>
+                  </a>
+              </div>
+      </div>
         <!-- =========================== Navegation Bar ========================== -->
 
     <div class="div_register">
@@ -73,6 +126,6 @@
           <h4>Have an account? <a href="/Login" class="link"> Login here </a></h4>
       </div>
 
-    <script src="../../pages/Register/index.js"></script>
+    
 </body>
 </html>

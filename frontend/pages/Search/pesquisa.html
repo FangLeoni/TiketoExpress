@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../pages/Search/pesquisa.css">
+    
+    <title>Home2</title>
+</head>
+<body>
+    <form class="pesquisa1">
+    <input type="search" id="texto" list="historic" placeholder="Origem" >
+        <datalist id="historic">
+            <option value="Guarulhos-São Paulo"></option>
+            <option value="Congonhas-São Paulo"></option>
+        </datalist>
+    </form>
+    <form class="pesquisa">
+       <input type="search" id="texto" list="historico" placeholder="Destino" class="form-control" onblur="checkNumber(this.value)"  >
+       <!-- <a href="compra.html"> </a> -->
+       <img src="../../images/lupa.png" class="btn" type="button" value="pesquisa" onclick="pesquisa()">
+        <datalist id="historico">
+            <option value="Deserto de sal - Bolívia"></option>
+            <option value="Svalbard - Ártico"></option>
+            <option value="Lago Manchado - British Columbia"></option>
+            <option value="Parque geológico sangue  Zhangye - China"></option>
+            <option value="Fly geyser - Nevada"></option>
+            <option value="Cofre de Sementes - Ártico"></option>
+            <option value="Parque Hitsujiyama-Japão"></option>
+            <option value="Vila de Shirakawago-Japão"></option>
+            <option value="Lago hiller-Austrália"></option>
+        </datalist>
+    </form>
+    <script src="../../pages/Search/funcao.js"></script>
+</body>
+</html>

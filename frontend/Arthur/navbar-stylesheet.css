@@ -1,0 +1,89 @@
+/*Arthur Silles Fernandes*/
+/*TiketoExpress' navbar-stylesheet.css*/
+
+/*GENERAL*/
+    * body {
+        background-color: rgb(245, 245, 245);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        font-family: Roboto;
+        color: rgb(131, 131, 131);
+        font-size: 1.2vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(131, 131, 131);
+        font-size: 1.2vw;
+    }
+
+/*NAVBAR*/
+    .navbar-grid {
+        display: grid;
+        grid-template-columns: 1vw 8vw 1vw 2vw 15vw 15vw 15vw 13vw auto;
+        grid-template-rows: 5vw;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+    }
+
+    .gray-navbar-grid {
+        display: grid;
+        grid-template-columns: 2.5vw 12vw 12vw;
+        grid-template-rows: 5vw;
+        text-align: left;
+        align-items: center;
+        background-color: rgb(228, 228, 228);
+        border-radius: 0vw 0vw 0vw 2vw;
+    }
+
+    .navbar-buttons-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 2.5vw 2.5vw;
+        align-items: center;
+        text-align: center;
+        transition: 0.4s;
+        border-bottom: 0.3vw solid rgb(201, 201, 201);
+    }
+
+    .navbar-buttons-grid:hover:not(#selected) {
+        transform: scale(1.1);
+        transition: 0.4s;
+        border-bottom: 0.3vw solid rgb(119, 119, 119);
+    }
+
+    #selected {
+        border-bottom: 0.3vw solid rgb(119, 119, 119);
+    }
+
+    .navbar-logo {
+        height: 3.5vw;
+        margin-top: 0.5vw;
+        transition: 0.4s;
+    }
+
+    .navbar-logo:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+
+    .gray-line {
+        font-size: 4vw;
+        color: rgb(228, 228, 228);
+        font-weight: 100;
+    }
+
+    .navbar-icons {
+        height: 2vw;
+        margin-top: 1vw;
+    }
+
+    .navbar-font-style {
+        color: rgb(131, 131, 131);
+        font-size: 1.2vw;
+        margin-top: -1vw;
+        font-weight: bold;
+    }

@@ -1,0 +1,67 @@
+/*Arthur Silles Fernandes*/
+/*TiketoExpress' index-stylesheet.css*/
+
+/*GENERAL*/
+    * body {
+        background-color: rgb(245, 245, 245);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        font-family: Roboto;
+        color: rgb(131, 131, 131);
+        font-size: 1.2vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(131, 131, 131);
+        font-size: 1.2vw;
+    }
+
+/*STYLE index.html*/
+    .page-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1vw auto 5vw auto 5vw auto;
+        text-align: center;
+    }
+
+/*W3Schools Bootstrap CAROUSEL*/
+    .carousel-images {
+        width: 100%;
+    }
+
+/*ABOUT US*/
+    .about-us-grid {
+        display: grid;
+        grid-template-columns: auto 35vw 5vw 35vw auto;
+        grid-template-rows: 20vw;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-us-image {
+        height: 20vw;
+        border-radius: 10vw 10vw 0.5vw 10vw;
+    }
+
+    .about-us-title {
+        color: rgb(0, 120, 255);
+        font-weight: bold;
+    }
+
+    .about-us-font-style {
+        font-size: 1.25VW;
+    }
+
+    .about-us-logo {
+        height: 2vw;
+        vertical-align: bottom;
+        transition: 1s;
+    }
+
+    .about-us-logo:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }

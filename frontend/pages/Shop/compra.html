@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="../../pages/Shop/check.css" rel="stylesheet">
+    
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+    </head>
+
+    <body class="bg-light">
+
+      <div class="container">
+    <div class="py-5 text-center">
+      <h2>Forma de pagamento</h2>
+     
+    </div>
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Informações pessoais</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">Nome</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                É necessário o campo nome válido.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Sobrenome</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                É necessário o campo sobrenome válido.
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="email">Email <span>*</span></label>
+            <input type="email" class="form-control" id="email" placeholder="nome@gmail.com" required>
+            <div class="invalid-feedback">
+                Digite um endereço de e-mail válido!
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="address">Endereço</label>
+            <input type="text" class="form-control" id="address" placeholder="Rua-Numero" required>
+            <div class="invalid-feedback">
+              Preencha com um endereço válido.
+            </div>
+          </div>  
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">País</label>
+              <select class="custom-select d-block w-100" id="country" required>
+                <option value="">Escolha...</option>
+                <option>Brasil</option>
+              </select>
+              <div class="invalid-feedback">
+                Defina seu país.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="custom-select d-block w-100" id="state" required>
+                <option value="">Escolha...</option>
+                <option>São Paulo</option>
+              </select>
+              <div class="invalid-feedback">
+               Defina seu estado
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+  
+          <h4 class="mb-3">Pagamento</h4>
+  
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="credit">Cartão de crédito</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="debit">Cartão de débito</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Nome no cartão</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Nome completo como exibido no cartão</small>
+              <div class="invalid-feedback">
+                O nome no cartão é obrigatório
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Numero do cartão</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+              <div class="invalid-feedback">
+                É necessário o número do cartão de crédito
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expira</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                É necessário o número do cartão de débito
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-cvv">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Codigo de segurança necessário
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar</button>
+          <div class="popup-wrapper" >
+              <div class="popup">
+                  <div class="popup-close">x</div>
+                  <div class="popup-content">
+                      <h2>Muito Obrigado por comprar na ticket express</h2>
+                  </div>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2020-2020 ticketexpress</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="../../pages/Shop/verificacao.js"></script>
+    
+</body>
+</html>

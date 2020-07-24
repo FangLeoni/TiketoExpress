@@ -1,25 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" style="scroll-behavior: smooth;">
 <head>
-    <meta charset="UTF-8">
+    <meta name="author" content="Arthur Silles Fernandes">
+    <meta name="email" content="arthur.fernandes24@etec.sp.gov.br">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="last-maintenance" content="July, 2020">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../styles/App.css">
+    <title>Tiketo Express</title>
+    <link rel="icon" type="image/png" href="../../images/tab-logo.png">
+    <link rel="stylesheet" type="text/css" href="../../Arthur/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../../Arthur/footer-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../../Arthur/navbar-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../../Arthur/index-stylesheet.css">
+    <noscript>It wasn't possible to load all JavaScript functionalities of this website, try reloading the page.</noscript>
 </head>
-<body>
+<body class="page-grid">
 
-    <!-- =========================== Navegation Bar ========================== -->
-    <nav >
-        <ul class="ul_nav" >
-            <a href="/" class="a_nav" >HOME</a>
-            <a href="/About" class="a_nav" >About</a>
-            <a href="/Locations" class="a_nav" >Locations</a>
-            <a href="/Login" class="a_nav" >Login</a>
+<!--NAVBAR-->        
+    <div class="navbar-grid">
+        <div></div>
+        <!--Navbar Logo-->
+            <div>
+                <a href="/">
+                    <img src="../../images/logo.png" alt="Logo TiketoExpress" class="navbar-logo">
+                </a>
+            </div>
+        <!--Gray Line-->
+            <div class="gray-line">I</div>
+            <div></div>
+        <!--Navabar Buttons-->
+            <a href="/Places">
+                <div class="navbar-buttons-grid">
+                    <div><img src="../../images/icon1.png" alt="Ícone Passagens Aréreas" class="navbar-icons"></div>
+                    <div class="navbar-font-style">Destinos</div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="navbar-buttons-grid">
+                    <div><img src="../../images/icon2.png" alt="Ícone Onde Estamos" class="navbar-icons"></div>
+                    <div class="navbar-font-style">Onde Estamos</div>
+                </div>
+            </a>
+            <a href="/About">
+                <div class="navbar-buttons-grid">
+                    <div><img src="../../images/icon3.png" alt="Ícone Quem Somos" class="navbar-icons"></div>
+                    <div class="navbar-font-style">Quem Somos</div>
+                </div>
+            </a>
+            <div></div>
+        <!--Gray Navbar-->
+            <div class="gray-navbar-grid">
+                <div></div>
+                <a href="/Login">
+                    <div class="navbar-buttons-grid">
+                        <div><img src="../../images/icon4.png" alt="Ícone Login" class="navbar-icons"></div>
+                        <div class="navbar-font-style">Login</div>
+                    </div>
+                </a>
+                <a href="/Search">
+                    <div class="navbar-buttons-grid">
+                        <div><img src="../../images/icon5.png" alt="Ícone Reservas" class="navbar-icons"></div>
+                        <div class="navbar-font-style">Reservas</div>
+                    </div>
+                </a>
+            </div>
+    </div>
+    <div></div>
+
+<!--W3Schools Bootstrap CAROUSEL-->
+<!--Original code available at: https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+    <script src="../../Arthur/jquery.min.js"></script>
+    <script src="../../Arthur/bootstrap.min.js"></script>    
+    <div id="demo" class="carousel slide" data-ride="carousel">
+    <!--Indicators-->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
         </ul>
-    </nav>
-    <!-- =========================== Navegation Bar ========================== -->
+    <!--Images-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../images/carousel_image1.jpg" alt="Imagem Parque Geológico Zhangye Danxia, China" class="carousel-images">            
+            </div>
+            <div class="carousel-item">
+                <img src="../../images/carousel_image2.jpg" alt="Imagem Salar de Uyuni, Bolívia" class="carousel-images">
+            </div>
+            <div class="carousel-item">
+                <img src="../../images/carousel_image3.jpg" alt="Imagem Torre de Macau, China" class="carousel-images">
+            </div>
+            <div class="carousel-item">
+                <img src="../../images/carousel_image4.jpg" alt="Imagem Cânion do Rio Poti, Brasil" class="carousel-images">
+            </div>
+            <div class="carousel-item">
+                <img src="../../images/carousel_image5.jpg" alt="Imagem Vulcão Thrihnukagigur, Islândia" class="carousel-images">
+            </div>
+        </div>
+    <!--Left and Right Arrows-->
+        <a href="#demo" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#demo" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div></div>
 
-    <h1>Home</h1>
-    
+<!--ABOUT US-->
+    <div class="about-us-grid" id="about-us">
+        <div></div>
+        <div><img src="../../images/about-us-image.jpg" alt="Imagem Avião" class="about-us-image"></div>
+        <div></div>
+        <div class="about-us-font-style">
+            <span class="about-us-title">QUEM SOMOS</span><br>
+            <br>Em 2020, nasce a TiketoExpress, com a missão de<br>
+            proporcionar a você viagens inesquecíveis aos mais distintos<br>
+            e remotos lugares do planeta.<br>
+            <br><b>Venha conhecer o mundo com <a href="/"><img src="../../images/logo.png" class="about-us-logo"></a>!</b>
+        </div>
+        <div></div>
+    </div>
+    <div></div>
+
+<!--FOOTER-->
+    <div class="footer-grid">
+        <div></div>
+        <div>
+            <a href="/"><img src="../../images/logo.png" alt="Logo TiketoExpress" class="footer-logo"></a>
+        </div>
+        <div></div>
+        <div class="contacts-grid">
+            <div>
+                <p class="footer-font-style">
+                    <span class="footer-titles">
+                        Atendimento na Agência Física</span><br>
+                        das Segunda à sexta - 10h00 às 18h00<br><br>
+                    <span class="footer-titles">Agência Física</span>
+                    <a href="tel:00 0000 0000" class="contacts footer-font-style">13 1234 5678</a><br>
+                    <span class="footer-titles">Email </span>
+                    <a href="mailto:contactus@tiketoexpress.com" class="contacts footer-font-style">contactus@tiketoexpress.com</a>
+                </p>
+            </div>
+            <div class="social-networks-grid">
+                <div></div>
+                <a href="https://www.facebook.com/"><img src="../../images/facebook.png" alt="Facebook TiketoExpress" class="social-networks contacts"></a>
+                <a href="https://www.instagram.com/"><img src="../../images/instagram.png" alt="Instagram TiketoExpress" class="social-networks contacts"></a>
+                <a href="https://www.youtube.com/"><img src="../../images/youtube.png" alt="Youtube TiketoExpress" class="social-networks contacts"></a>
+                <div></div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+<!--VLibras WIDGET-->
+<!--Original files available at: https://www.vlibras.gov.br/ -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </body>
 </html>

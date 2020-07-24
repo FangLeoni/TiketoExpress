@@ -1,0 +1,79 @@
+/*Arthur Silles Fernandes*/
+/*TiketoExpress' footer-stylesheet.css*/
+
+/*GENERAL*/
+    * body {
+        background-color: rgb(245, 245, 245);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        font-family: Roboto;
+        color: rgb(131, 131, 131);
+        font-size: 1.2vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(131, 131, 131);
+        font-size: 1.2vw;
+    }
+
+/*FOOTER*/
+    .footer-grid {
+        display: grid;
+        grid-template-columns: auto 14vw 52vw 27vw auto;
+        grid-template-rows: 14vw 1vw;
+        text-align: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    .footer-logo {
+        height: 7vw;
+        transition: 1s;
+        margin-top: 1vw;
+    }
+
+    .footer-logo:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+    }
+
+    .contacts-grid {
+        display: grid;
+        grid-template-rows: 10vw 2vw;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contacts:hover {
+        transform: scale(1.1);
+        transition: 0.4s;
+        font-size: 1.3vw;
+    }
+
+    .footer-titles {
+        color: rgb(0, 120, 255);
+    }
+
+    .footer-font-style {
+        text-align: center;
+        font-size: 1.2vw;
+        color: rgb(131, 131, 131);
+        font-weight: bold;
+        text-decoration: none;
+        transition: 1s;
+    }
+
+    .social-networks-grid {
+        display: grid;
+        grid-template-columns: auto 4vw 4vw 4vw auto;
+        grid-template-rows: 2vw;
+        text-align: center;
+    }
+
+    .social-networks {
+        height: 2vw;
+        transition: 1s;
+    }
