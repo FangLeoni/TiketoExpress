@@ -1,7 +1,7 @@
 body{
     background-image: url('../../images/fundo.jpeg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 
 .h2_register
@@ -32,7 +32,7 @@ body{
 
 .form_register
 {
-    width: 30%;
+    width: 40%;
     height: 70%;
     border: mediumseagreen solid 2px ;
     display: grid; 
@@ -47,7 +47,6 @@ body{
 
 .divInput_register
 {
-    /* background-color: blue; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -62,6 +61,7 @@ body{
 .input_register
 {
     height: 8vh;
+    width: 100%;
     background-color: rgb(240, 240, 240);
     border: mediumseagreen solid 2px;
     border-radius: 45px;
@@ -92,10 +92,11 @@ body{
     
 }
 
-.btn_register { 
+.btn_register 
+{ 
     grid-area: btn; 
     height: 8vh;
-    width: 70%;
+    width: 10vw;
     justify-self: center;
     align-self: center;
     border: mediumseagreen solid 2px;
@@ -111,7 +112,58 @@ body{
     transition: all 1.5s ;
 }
 
+h4
+{
+    text-align: center;
+}
+
 .link
 {
-    color: white;
+    color: blue;
+}
+
+@media screen and (max-width: 900px){
+    
+    .form_register
+    {
+        width: 50%;
+        height: 75%;
+    }
+    
+    .btn_register
+    {
+        width: 15vw;
+    } 
+}
+
+@media screen and (max-width: 600px){
+
+    .form_register
+    {
+        width: 70%;
+        height: 75%;
+    }
+    
+    .btn_register
+    {
+        width: 20vw;
+    } 
+}
+
+@media screen and (max-width: 400px){
+
+    .form_register
+    {
+        grid-template-areas: "name"
+                             "email"
+                             "password"
+                             "passConf"
+                             "cpf"
+                             "btn";
+    }
+    
+    .divCpf_register
+{
+    width:100%;
+}
 }

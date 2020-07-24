@@ -76,8 +76,9 @@ h2
 {
     grid-area: imgCont;
     margin-top: 4vw;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
     margin: 0 4vw;
     margin-bottom: 20vh;
     margin-top: 8vh;
@@ -106,3 +107,99 @@ h2
 {
     margin: 2vh 0;
 }
+
+@media screen and (max-width: 980px){
+
+    .Text
+    {
+        width: 40vw;
+    }
+
+    .dentro
+    {
+        width: 40vw;
+        height: 50vh;
+        align-self: center;
+    }
+
+    .predio
+    {
+        width: 40vw;
+        height: 65vh;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .Text
+    {
+        width: 60vw;
+    }
+
+    .textos
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .textos:nth-child(2)
+    {
+        flex-direction: column-reverse;
+    }
+
+    .predio
+    {
+        width: 60vw;
+        height: 75vh;
+        margin-bottom: 2vh;
+    }
+
+    .dentro
+    {
+        width: 60vw;
+        height: 65vh;
+        align-self: center;
+        margin-bottom: 2vh;
+    }
+
+    .imgCont
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr ; 
+        grid-row-gap: 2vh;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .Text
+    {
+        width: 70vw;
+    }
+
+    .predio
+    {
+        width: 70vw;
+        height: 75vh;
+    }
+
+    .dentro
+    {
+        width: 80vw;
+        height: 65vh;
+
+    }
+
+    .imgCont
+    {
+        display: grid;
+        grid-template-columns: 1fr ; 
+        grid-row-gap: 2vh;
+    }
+
+}
+

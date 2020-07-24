@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
-    "dev": "nodemon server.js",
-    "api": "nodemon api/index.js",
-    "database": "nodemon database/index.js"
+    "dev": "nodemon backend/server.js",
+    "api": "nodemon backend/api/index.js",
+    "database": "nodemon backend/database/index.js"
   },
   "keywords": [],
   "author": "",
