@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../styles/App.css">
+  <link rel="stylesheet" href="../../pages/Login/index.css">
+  <script src="https://use.fontawesome.com/be2d48cd2e.js"></script>
+</head>
+<body>
+
+    <!-- =========================== Navegation Bar ========================== -->
+    <nav >
+      <ul class="ul_nav" >
+          <a href="/" class="a_nav" >HOME</a>
+          <a href="/About" class="a_nav" >About</a>
+          <a href="/Locations" class="a_nav" >Locations</a>
+          <a href="/Login" class="a_nav" >Login</a>
+      </ul>
+  </nav>
+  <!-- =========================== Navegation Bar ========================== -->
+
+  <div class="div_login">
+    <h2 class="h2_login" >Login</h2>
+    <div class="box"></div>
+      <form class="form_login">
+          <div class="divInput_login" >
+              <input 
+                class="input_login mail_login"
+                type="email" 
+                name="email" 
+                placeholder="email" 
+                />
+          </div>
+          <div class="divInput_login" >
+              <input 
+                class="input_login pswd_login"
+                type="password" 
+                name="password" 
+                placeholder="password" 
+                maxLength="25" 
+                />
+          </div>
+          <button class="btn_login">Login</button>
+          <h4>Don't have an account? <a href="/Register" class="link"> Register here </a></h4>
+      </form>
+  </div>
+</body>
+</html>

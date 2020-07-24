@@ -1,0 +1,108 @@
+h1
+{
+    text-align: center;
+    width: 100%;
+    margin-top: 4vh;
+    /* background-color: blue; */
+}
+
+h2
+{
+    text-align: center;
+    width: 100%;
+}
+
+.genCont
+{
+    width: 100%;
+    height: 100%;
+    
+    grid-template-areas: "text1 "
+                         "text2 "
+                         "imgCont ";
+    
+}
+
+.textos
+{
+    display: flex;
+    justify-content: center;
+    margin: 4vh;
+}
+
+.textos:nth-child(1)
+{
+    grid-area: text1;
+}
+
+.textos:nth-child(2)
+{
+    grid-area: text2;
+}
+
+.Text
+{
+    width: 25vw;
+    margin: 0 2vw ;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.fText
+{
+    margin: 0 4vw ;
+}
+
+.emp
+{
+    border-radius: 45px;
+    border: royalblue 5px dotted;
+}
+
+.dentro
+{
+    width: 30vw;
+    height: 40vh;
+    align-self: center;
+}
+
+.predio
+{
+    width: 25vw;
+    height: 60vh;
+}
+
+.imgCont
+{
+    grid-area: imgCont;
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 4vw;
+    margin-bottom: 20vh;
+    margin-top: 8vh;
+    
+}
+
+.funcCont 
+{
+    text-align: center;
+    border-radius: 10px;
+    height: 100%;
+    border: lightgreen 2px solid;
+    margin: 0 2vh;
+}
+
+.funcImg
+{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    border: royalblue 5px dotted;
+    margin: 2vh 0;
+}
+
+.funcCont  > p
+{
+    margin: 2vh 0;
+}

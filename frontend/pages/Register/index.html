@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../styles/App.css">
+    <link rel="stylesheet" href="../../pages/Register/index.css">
+</head>
+<body>
+
+        <!-- =========================== Navegation Bar ========================== -->
+        <nav >
+            <ul class="ul_nav" >
+                <a href="/" class="a_nav" >HOME</a>
+                <a href="/About" class="a_nav" >About</a>
+                <a href="/Locations" class="a_nav" >Locations</a>
+                <a href="/Login" class="a_nav" >Login</a>
+            </ul>
+        </nav>
+        <!-- =========================== Navegation Bar ========================== -->
+
+    <div class="div_register">
+        <h2 class="h2_register" >Register</h2>
+        <div class="box"></div>
+          <form class="form_register">
+            <div class="divInput_register" >
+                <input 
+                  class="input_register name_register"
+                  type="text" 
+                  name="name" 
+                  placeholder="Name" 
+                  maxLength="25" 
+                  />
+            </div>
+              <div class="divInput_register" >
+                  <input 
+                    class="input_register mail_register"
+                    type="email" 
+                    name="email" 
+                    placeholder="Email" 
+                    />
+              </div>
+              <div class="divInput_register" >
+                  <input 
+                    class="input_register pswd_register"
+                    type="password" 
+                    name="password" 
+                    placeholder="Password" 
+                    maxLength="25" 
+                    />
+              </div>
+              <div class="divInput_register" >
+                <input 
+                  class="input_register pswdConf_register"
+                  type="password" 
+                  name="passwordConf" 
+                  placeholder="Confirm password" 
+                  maxLength="25" 
+                  />
+            </div>
+            <div class="divInput_register divCpf_register" >
+                <input 
+                  class="input_register cpf_register"
+                  type="text" 
+                  name="cpf" 
+                  placeholder="CPF" 
+                  maxLength="25" 
+                  />
+            </div>
+              <button class="btn_register">Cadastrar</button>
+          </form>
+          <h4>Have an account? <a href="/Login" class="link"> Login here </a></h4>
+      </div>
+
+    <script src="../../pages/Register/index.js"></script>
+</body>
+</html>
